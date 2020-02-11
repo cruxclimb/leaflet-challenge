@@ -40,22 +40,22 @@ d3.json(earthQuakeURL, function(data) {
         properties = earthquakeData[i].properties;
 
         if (properties.mag <1) {
-          color = 'greenyellow';
+          color = 'green';
         }
         else if (properties.mag <2){
-          color = 'yellow'
+          color = 'greenyellow'
         }
         else if (properties.mag <3){
-          color = 'orange'
+          color = 'yellow'
         }
         else if (properties.mag <4){
-          color = 'red'
+          color = 'orange'
         }
         else if (properties.mag <5){
-          color = 'darkred'
+          color = 'red'
         }
         else {
-          color = "purple"
+          color = "darkred"
         }
         
         //Map circles
@@ -111,12 +111,12 @@ d3.json(earthQuakeURL, function(data) {
         var magnitude = [0, 1, 2, 3, 4, 5];
 
         var colors = [
+          "green",
           "greenyellow",
           "yellow",
           "orange",
           "red",
-          "darkred",
-          "purple"
+          "darkred"
         ];
     
     
